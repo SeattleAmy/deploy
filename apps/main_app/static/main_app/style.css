@@ -1,0 +1,20 @@
+
+*{
+  background-color: lightblue;
+
+}
+
+textarea{
+  width:300px;
+  height:250px;
+}
+#container{
+  padding:30px;
+  text-align: center;
+}
+
+.submit {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}

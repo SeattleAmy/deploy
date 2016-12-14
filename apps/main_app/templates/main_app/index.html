@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodingDojo Wall</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main_app/style.css' %}" />
+  <body>
+    <div id="container">
+      <h1>Enter an Email</h1>
+      {% for message in messages%}
+      {{message}}
+      {% endfor %}
+      <form class="" action="/create" method="post">
+        {% csrf_token %}
+        <input type="text" name="email" >
+        <input type="submit" value="Enter Email">
+      </form>
+    </div>
+    </body>
+</html>
